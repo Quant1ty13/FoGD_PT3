@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 191322501}
   - component: {fileID: 191322500}
   - component: {fileID: 191322499}
+  - component: {fileID: 191322502}
   m_Layer: 0
   m_Name: Red
   m_TagString: pillar
@@ -231,6 +232,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191322497}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &191322502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191322497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36370fdb862c6c54585c56a707dba8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionCall
+  Pillar: {fileID: 2100000, guid: 4cef4f993f1b04f4db2d213462e63abb, type: 2}
+  Player: {fileID: 2100000, guid: 23afb1ec0299538488b0ca1a140e458c, type: 2}
+  matColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &311040414
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,9 +261,10 @@ GameObject:
   - component: {fileID: 311040415}
   - component: {fileID: 311040419}
   - component: {fileID: 311040420}
+  - component: {fileID: 311040421}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,6 +403,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &311040421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311040414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36370fdb862c6c54585c56a707dba8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionCall
+  Pillar: {fileID: 2100000, guid: 23afb1ec0299538488b0ca1a140e458c, type: 2}
+  Player: {fileID: 2100000, guid: 23afb1ec0299538488b0ca1a140e458c, type: 2}
+  matColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +855,7 @@ GameObject:
   - component: {fileID: 1068546082}
   - component: {fileID: 1068546081}
   - component: {fileID: 1068546080}
+  - component: {fileID: 1068546083}
   m_Layer: 0
   m_Name: Blue
   m_TagString: pillar
@@ -923,6 +956,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068546078}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1068546083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068546078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36370fdb862c6c54585c56a707dba8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionCall
+  Pillar: {fileID: 2100000, guid: 288cef51cc4d4b5478300189b60c6348, type: 2}
+  Player: {fileID: 2100000, guid: 23afb1ec0299538488b0ca1a140e458c, type: 2}
+  matColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1203740383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1131,7 @@ GameObject:
   - component: {fileID: 1630114846}
   - component: {fileID: 1630114845}
   - component: {fileID: 1630114844}
+  - component: {fileID: 1630114847}
   m_Layer: 0
   m_Name: Yellow
   m_TagString: pillar
@@ -1183,6 +1232,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630114842}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1630114847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630114842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36370fdb862c6c54585c56a707dba8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionCall
+  Pillar: {fileID: 2100000, guid: 669d00cfdd878d7478b4c4f1395de324, type: 2}
+  Player: {fileID: 2100000, guid: 23afb1ec0299538488b0ca1a140e458c, type: 2}
+  matColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1693967173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,6 +1259,7 @@ GameObject:
   - component: {fileID: 1693967177}
   - component: {fileID: 1693967176}
   - component: {fileID: 1693967175}
+  - component: {fileID: 1693967178}
   m_Layer: 0
   m_Name: White
   m_TagString: pillar
@@ -1295,6 +1360,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693967173}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1693967178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693967173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36370fdb862c6c54585c56a707dba8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionCall
+  Pillar: {fileID: 2100000, guid: f3a1443ec130c7947bb0856a31fd1fb7, type: 2}
+  Player: {fileID: 2100000, guid: 23afb1ec0299538488b0ca1a140e458c, type: 2}
+  matColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1741972761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,6 +1387,7 @@ GameObject:
   - component: {fileID: 1741972765}
   - component: {fileID: 1741972764}
   - component: {fileID: 1741972763}
+  - component: {fileID: 1741972766}
   m_Layer: 0
   m_Name: Black
   m_TagString: pillar
@@ -1407,6 +1488,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741972761}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1741972766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741972761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36370fdb862c6c54585c56a707dba8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionCall
+  Pillar: {fileID: 2100000, guid: 67ba582fbbc19a047aefaeee2f48172a, type: 2}
+  Player: {fileID: 2100000, guid: 23afb1ec0299538488b0ca1a140e458c, type: 2}
+  matColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1934161276
 GameObject:
   m_ObjectHideFlags: 0
